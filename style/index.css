@@ -1,0 +1,24 @@
+body {
+    background-color: #202020;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+.conjunto{
+  margin: 10px;
+}
+  .titulo{
+    background-color: #333;
+    border-radius: 25pc;
+  }
+  .titulo:hover{
+    background-color: #276ba3;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+ 
+    text-transform: uppercase;
+  }
+  

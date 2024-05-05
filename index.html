@@ -1,67 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="js/juego.js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
     <title>Skull Hell</title>
-    <style>
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-            padding: 50px 0;
-        }
-        h1 {
-            font-size: 2.5rem;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .trailer {
-            margin-top: 30px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #555;
-        }
-    </style>
-</head>
-<center><body>
-   
-        <h1>Skull Hell</h1>
-        <p>Sumérgete en un mundo de oscuridad y misterio. ¿Estás listo para desvelar los secretos más oscuros?</p>
-        <audio autoplay loop class="audio-hidden">
-            <source src="sonido/Y2meta.app - Medieval Music – Cobblestone Village (128 kbps).mp3" type="audio/mp3"></audio>
-</body></center>
-</html>
-<html>
+  </head>
+  <center>
+    <body onload="inicializa();">
+      <div class="conjunto">
+        <div class="titulo">
+          <h1>Skull Hell</h1>
+        </div>
+        <p>
+          Sumérgete en un mundo de oscuridad y misterio.
+          <br />¿Estás listo para desvelar los secretos más oscuros?
+        </p>
+      </div>
 
-<head>
-  <title> Sesion 22</title>
-  <script src='js/juego.js'></script>
-</head>
+      <!--el juego -->
+      <center>
+        <canvas
+          id="canvas"
+          width="650"
+          height="400"
+          style="border: 2px solid #e4e4e4"
+        ></canvas>
+      </center>
 
-<body onload='inicializa();'>
-  <center><canvas id='canvas' width='750' height='500' style='border:2px solid #000000;'></canvas></center>
-</body>
+      <!--el sonido -->
+      <audio autoplay loop class="audio-hidden">
+        <source
+          src="sonido/Y2meta.app - Medieval Music – Cobblestone Village (128 kbps).mp3"
+          type="audio/mp3"
+        />
+      </audio>
 
+      <!--la funcionalidad del juego -->
+      <script src="js/juego.js"></script>
+    </body>
+  </center>
 </html>
